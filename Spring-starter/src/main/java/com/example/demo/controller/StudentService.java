@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.model.Book;
 
 @RestController
-@RequestMapping(path = "/api/v1/students")
+@RequestMapping(path = "/api/v1")
 public class StudentService {
 	   @Autowired
 	   private StudentService service;
 	   
-	   @GetMapping(path = "/{id}")
+	   @GetMapping(path = "books/{id}")
 	   public Book getBookById(@PathVariable("id") int id) {
 		   return this.service.getBookById(id);
 	   }

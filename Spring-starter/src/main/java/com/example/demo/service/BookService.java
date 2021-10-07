@@ -8,7 +8,7 @@ import com.example.demo.model.Book;
 @Service
 public class BookService {
 	@Autowired
-   private Book book;
+    private Book book;
 	
 	public Book getBookbyId(int id) {
 		book.setBookName("java");

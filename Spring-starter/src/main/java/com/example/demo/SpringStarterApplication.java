@@ -9,7 +9,8 @@ public class SpringStarterApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext ctx= SpringApplication.run(SpringStarterApplication.class, args);
-	    ctx.close();
+	    System.out.println("Done");
+		ctx.close();
 	}
 
 }
